@@ -33,7 +33,7 @@
 .luas-segitiga-img {
     height: 300px;
     width: 300px;
-    border: 1px solid;
+    border: none;
     background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
     background-size: cover;
     background-position: center;
@@ -71,4 +71,32 @@ input[type=number] {
 
 .main-content>aside{
     flex: 1;
+}
+
+.hitung-luas-segitiga {
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 17px 55px;
+    background-color: cornflowerblue;
+}
+
+.reset-luas-segitiga {
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 17px 55px;
+    background-color: cornflowerblue;
+}
+
+.hitung-keliling-segitiga {
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 17px 55px;
+    background-color: cornflowerblue;
+}
+
+.reset-keliling-segitiga {
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 17px 55px;
+    background-color: cornflowerblue;
 }

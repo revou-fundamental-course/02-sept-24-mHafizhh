@@ -16,7 +16,7 @@
     <main>
         <section class="selection-content">
             <button href="#" class="selection-btn lightblue-color">Segitiga</button>
-            <button href="#" class="selection-btn lightblue-color">Jajar Genjang</button>
+            <button href="#" class="selection-btn">Jajar Genjang</button>
         </section>
 
         <section class="main-content">
@@ -32,7 +32,7 @@
     
                 <hr / >
     
-                <form>
+                <form onsubmit="event.preventDefault(); hitungLuasSegitiga();">
                     <header>
                         <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
@@ -45,38 +45,41 @@
                         <label for="tinggi">Tinggi:</label>
                         <input id="tinggi" type="number"/>
                     </div>
+                    <button type="submit" class="hitung-luas-segitiga">Hitung</button>
+                    <button type="button" class="reset-luas-segitiga" onclick="resetLuasSegitiga()">Reset</button>
+                    <p id="hasil-luas"></p>
                 </form>
             </aside>
     
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                    <h1 class="luas-segitiga-header">Keliling Segitiga</h1>
                 </header>
     
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga:</p>
+                    <p>Rumus Keliling Segitiga:</p>
                 </article>
     
                 <hr / >
     
-                <form>
+                <form onsubmit="event.preventDefault(); hitungKelilingSegitiga()">
                     <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                        <h1 class="luas-segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
     
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas:</label>
-                        <input id="panjang-alas" type="number"/>
+                        <label for="panjang-sisi">Panjang Sisi:</label>
+                        <input id="panjang-sisi" type="number" required/>
                     </div>
-                    <div class="input-wrapper">
-                        <label for="tinggi">Tinggi:</label>
-                        <input id="tinggi" type="number"/>
-                    </div>
-                </form>
+                    <button type="submit" class="hitung-keliling-segitiga">Hitung</button>
+                    <button type="button" class="reset-keliling-segitiga" onclick="resetKelilingSegitiga()">Reset</button>
+                    
+                    <p id="hasil-keliling"></p>
             </aside>
         </section>
     </main>
     
+    <script src="js\script.js"></script>
 </body>
 </html>
