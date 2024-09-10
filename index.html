@@ -15,8 +15,8 @@
 
     <main>
         <section class="selection-content">
-            <button href="#" class="selection-btn" onclick="showSegitiga()">Segitiga</button>
-            <button href="#" class="selection-btn" onclick="showJajarGenjang()">Jajar Genjang</button>
+            <button class="selection-btn" onclick="showSegitiga()">Segitiga</button>
+            <button class="selection-btn" onclick="showJajarGenjang()">Jajar Genjang</button>
         </section>
 
         <section class="main-content-segitiga">
@@ -39,15 +39,16 @@
                     </header>
     
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas:</label>
+                        <label>Panjang Alas:</label>
                         <input id="panjang-alas" type="number"/>
                     </div>
                     <div class="input-wrapper">
-                        <label for="tinggi">Tinggi:</label>
+                        <label>Tinggi:</label>
                         <input id="tinggi" type="number"/>
                     </div>
                     <button type="submit" class="hitung-luas-segitiga">Hitung</button>
                     <button type="button" class="reset-luas-segitiga" onclick="resetLuasSegitiga()">Reset</button>
+                    
                     <p id="hasil-luas"></p>
                 </form>
             </aside>
@@ -60,7 +61,7 @@
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
                     <p>Rumus Keliling Segitiga:</p>
-                    <p>K = 3 * S</p>
+                    <p>K = S + S + S</p>
                 </article>
     
                 <hr / >
@@ -70,18 +71,25 @@
                         <h1 class="luas-segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
     
-                    <div class="input-wrapper">
-                        <label for="panjang-sisi">Panjang Sisi:</label>
-                        <input id="panjang-sisi" type="number" required/>
+                    <div>
+                        <label>Panjang Sisi 1:</label>
+                        <input id="panjang-sisi1" type="number" required/>
                     </div>
+                    <div></div>
+                        <label>Panjang Sisi 2:</label>
+                        <input id="panjang-sisi2" type="number" required/>
+                    </div>
+                    <div></div>
+                        <label>Panjang Sisi 3:</label>
+                        <input id="panjang-sisi3" type="number" required/>
+                    </div>
+                    <br>
                     <button type="submit" class="hitung-keliling-segitiga">Hitung</button>
                     <button type="button" class="reset-keliling-segitiga" onclick="resetKelilingSegitiga()">Reset</button>
-                    
+
                     <p id="hasil-keliling"></p>
             </aside>
         </section>
-    </main>
-    
     <footer>
         by Muhammad Hafizh Husein
     </footer>
