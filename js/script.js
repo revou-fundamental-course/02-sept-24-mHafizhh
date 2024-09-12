@@ -64,6 +64,7 @@ function hitungKelilingJajargenjang(){
     }
 }
 
+// Reset Form
 function resetLuasSegitiga(){
     document.getElementById("alas-segitiga").value = "";
     document.getElementById("tinggi-segitiga").value = "";
@@ -93,11 +94,12 @@ function resetFormKelilingJajarGenjang() {
     document.getElementById("hasil-keliling-jajargenjang").textContent = "";
 }
 
+// Fungsi Untuk Menampilkan Konten
 function tampilkanSegitiga() {
     // Mengambil elemen dengan class 'main-content-segitiga'
     const segitigaContent = document.querySelector('.main-content-segitiga');
     const jajargenjangContent = document.querySelector('.main-content-jajargenjang');
-    // Mengubah display menjadi 'block' untuk menampilkannya
+
     segitigaContent.style.display = 'flex';
     jajargenjangContent.style.display = 'none';
     
@@ -108,7 +110,6 @@ function tampilkanJajargenjang() {
     const jajargenjangContent = document.querySelector('.main-content-jajargenjang');
     const segitigaContent = document.querySelector('.main-content-segitiga');
     
-    // Mengubah display menjadi 'block' untuk menampilkannya
     segitigaContent.style.display = 'none';
     jajargenjangContent.style.display = 'flex';
 }
