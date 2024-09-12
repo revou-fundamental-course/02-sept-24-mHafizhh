@@ -1,35 +1,142 @@
-.main-header {
+.main-header{
     text-align: center;
+    margin: 0;
+    padding-top: 0%;
 }
 
-.selection-content {
+.pilih-bangun-datar {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
 }
 
-.selection-btn {
-    height: 32px;
-    border: none;
-    border-radius: 12px;
-    background-color: #7f5af0;
+.pilih-bangun-datar>h4{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.header-segitiga>h1, .header-jajargenjang>h1{
+    display: flex;
+    height: 80px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px #eebbc3;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
     color: #fffffe;
+    font-size: large;
 }
 
-.luas-segitiga-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    background: #16161a;
-    text-align: center;
-    color: white;
-}
-
-.luas-segitiga-content {
+.konten-segitiga,.konten-jajargenjang{
     display: flex;
     flex-direction: column;
 }
 
-.luas-segitiga-img {
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.rumus-luas-segitiga,.rumus-keliling-segitiga,.rumus-luas-jajargenjang,.rumus-keliling-jajargenjang{
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #eebbc3;
+    box-shadow: 0 0 10px #eebbc3;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 80%;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.input-box input {
+    height: 50px;
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    color: #fffffe;
+    border-radius: 5px;
+    padding: 0 15px;
+    background: transparent;
+}
+
+.input-box input::-webkit-input-placeholder{
+    color: #eebbc3;
+}
+
+.button-hitung{
+    background: transparent;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #eebbc3;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.button-hitung:hover{
+    background: transparent;
+    box-shadow: 0 0 10px #eebbc3;
+
+}
+
+.button-reset{
+    background: #b8c1ec;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: #232946;
+    font-weight: bold;
+    border: 1px solid #b8c1ec;
+}
+
+.button-reset:hover{
+    background-color: #eebbc3;
+    color: #fffffe;
+    border: 1px solid #eebbc3;
+    box-shadow: 0 0 10px #eebbc3;
+}
+
+.main-content{
+    display: flex;
+    margin-right: 5px;
+}
+
+.main-content-segitiga{
+    display: none;
+}
+
+body {
+    background-image: url(https://d33wubrfki0l68.cloudfront.net/b4759e96fa9ada8ee8caa4c771fcd503f289d791/5cf1a/img/triangle_background.jpg);
+
+}
+
+.main-content-jajargenjang{
+    display: none;
+}
+
+.main-content>aside{
+    flex: 1;
+}
+
+.perhitungan>p{
+    margin: 0;
+}
+
+.gambar-segitiga {
     height: 300px;
     width: 300px;
     border: none;
@@ -37,76 +144,75 @@
     background-size: cover;
     background-position: center;
     align-self: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-
-.luas-segitiga-form-header {
-    text-align: center;
+.gambar-segitiga:hover {
+    box-shadow: 0 0 15px #eebbc3;
 }
 
-.input-wrapper {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.gambar-jajargenjang {
+    height: 300px;
+    width: 300px;
+    border: none;
+    background-image: url(https://cdn.idntimes.com/content-images/community/2023/11/rumus-jajargenjang-555f7e6f55a0e0cc6f0ebf54b37a7096-1eb7c6dd670f7a8c1f0037c5cde4d7a1.jpg);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.input-wrapper>input {
-    width: 65%;
+.gambar-jajargenjang:hover{
+    box-shadow: 0 0 15px #eebbc3;
 }
 
-input[type=number] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+body {
+    background-color: #232946;
 }
 
-.main-content-segitiga {
-    display: flex;
+.text-color {
+    color: #fffffe;
+    font-weight: bold;
+    font-size: large;
 }
 
-.main-content-segitiga>aside{
-    flex: 1;
+.btn{
+    width: 20%;
+    height: 50px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: #fffffe;
+    font-weight: bold;
+    border-radius: 9px;
+    border: 1px solid #eebbc3;
 }
 
-.hitung-luas-segitiga {
-    border-radius: 50px;
-    font-size: 18px;
-    padding: 17px 55px;
-    background-color: #7f5af0;
+.btn:hover{
+    background: transparent;
+    box-shadow: 0 0 15px #eebbc3;
 }
 
-.reset-luas-segitiga {
-    border-radius: 50px;
-    font-size: 18px;
-    padding: 17px 55px;
-    background-color: #7f5af0;
-
+.header-color {
+    color: #fffffe;
 }
 
-.hitung-keliling-segitiga {
-    border-radius: 50px;
-    font-size: 18px;
-    padding: 17px 55px;
-    background-color: #7f5af0;
-}
-
-.reset-keliling-segitiga {
-    border-radius: 50px;
-    font-size: 18px;
-    padding: 17px 55px;
-    background-color: #7f5af0;
+@media only screen and (max-width: 480px){
+    .main-content{
+        flex-direction: column;
+    }
 }
 
 footer {
-    text-align: center;
-    background-color: #16161a;
-    color: #fffffe;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: bold;
+    display: flex;
+    height: 60px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px #eebbc3;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: large;
+    margin-top: 30px;
 }
-
